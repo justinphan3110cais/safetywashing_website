@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.custom-collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.custom-collapse .ant-collapse-header {
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-collapse .ant-collapse-content {
+  text-align: center;
+  width: 100%;
+}
+
+.custom-collapse .ant-collapse-item {
+  width: 95%;
+  margin: 0 auto;
+}
+
+
+.customDashedButton {
+  border-color: #93B3A5 !important;
+  border-width: 1.8px !important;
+}
+
+.customDashedButton:hover {
+  border-color: #8FB8EA !important;
+}
+
+
+.repeicon {
+  width: 1.3em;        /* Match the width to the current font size */
+  height: 1.3em;       /* Match the height to the current font size */
+  vertical-align: middle;  /* Aligns the image to the middle of the text */
+  margin-right: 0.2em;    /* Some space between the image and the text */
+  margin-bottom:  0.5em;;
+}
