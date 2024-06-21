@@ -101,7 +101,7 @@ const HeaderPage = () => {
 				<Panel header={
 					<Button ghost className="customDashedButton">
 						<div className='header__button' style={{ textAlign: 'center', color: 'black' }}>
-							<span >The SafetyWashing Team</span>
+							<span >Team</span>
 							<span style={{ marginLeft: "5px" }}>{activeKey.includes('1') ? <CaretUpOutlined style={{ color: 'black' }} /> : <CaretDownOutlined style={{ color: 'black' }} />}</span>
 						</div>
 
