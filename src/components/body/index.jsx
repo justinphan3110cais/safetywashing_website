@@ -216,7 +216,9 @@ const BodyPage = () => {
 						<Panel header="4 - Machine Ethics" key="4" className="custom-panel">
 							<Row gutter={16}>
 								<Col span={16}>
-									Machine ethics benchmarks probe models' understanding of moral concepts. We find that machine ethics benchmarks tend to be highly correlated with general capabilities, indicating that internet-scale pretraining imbues LLMs with an understanding of ethics and morality. However, our results also show that this correlation is not identical across all areas of machine ethics. Some topics improve much more slowly with general capabilities, suggesting a need to ensure a balanced understanding of different ethical perspectives is present in models.
+									Machine ethics benchmarks probe models' understanding of moral concepts. We find that machine ethics benchmarks tend to be highly correlated with general capabilities, indicating that internet-scale pretraining imbues LLMs with an understanding of ethics and morality. 
+									<br/><br/>
+									However, our results also show that this correlation is not identical across all areas of machine ethics. Some topics improve much more slowly with general capabilities, suggesting a need to ensure a balanced understanding of different ethical perspectives is present in models.
 								</Col>
 								<Col span={6}>
 									<img src="images/ethics_table.png" alt="Capabilities correlations of base and chat/instruct models on different bias evaluation datasets" style={{ display: 'block', margin: '0 auto', width: '100%' }} />
