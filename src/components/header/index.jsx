@@ -27,18 +27,18 @@ const HeaderPage = () => {
 	}, [window.innerWidth]);
 
 	const authors = [
-		{ name: "Richard Ren", affiliation: 1, bioLink: "https://github.com/notrichardren" },
-		{ name: "Steven Basart", affiliation: 1, bioLink: "https://stevenbas.art/" },
-		{ name: "Adam Khoja", affiliation: "1,2", bioLink: "" },
-		{ name: "Alexander Pan", affiliation: 3, bioLink: "https://aypan17.github.io/" },
+		{ name: "Richard Ren", affiliation: "1, 2", bioLink: "https://github.com/notrichardren" },
+		{ name: "Steven Basart", affiliation: "1", bioLink: "https://stevenbas.art/" },
+		{ name: "Adam Khoja", affiliation: "1,3", bioLink: "" },
+		{ name: "Alexander Pan", affiliation: "3", bioLink: "https://aypan17.github.io/" },
 		{ name: "Alice Gatti", affiliation: "1", bioLink: "https://www.linkedin.com/in/gattialice/", contrib: "‡" },
-		{ name: "Long Phan", affiliation: 1, bioLink: "https://longphan.ai/" },
-		{ name: "Xuwang Yin", affiliation: 1, bioLink: "https://xuwangyin.github.io/" },
-		{ name: "Mantas Mazeika", affiliation: "1,9", bioLink: "https://www.linkedin.com/in/mmazeika/" },
-		{ name: "Gabriel Mukobi", affiliation: "8", bioLink: "https://gabrielmukobi.com" },
-		{ name: "Ryan Hwang Kim", affiliation: "8", bioLink: "https://gabrielmukobi.com" },
-		{ name: "Stephen Fitz", affiliation: "8", bioLink: "https://gabrielmukobi.com" },
-		{ name: "Dan Hendrycks", affiliation: 1, bioLink: "https://people.eecs.berkeley.edu/~hendrycks/" },
+		{ name: "Long Phan", affiliation: "1", bioLink: "https://longphan.ai/" },
+		{ name: "Xuwang Yin", affiliation: "1", bioLink: "https://xuwangyin.github.io/" },
+		{ name: "Mantas Mazeika", affiliation: "1", bioLink: "https://www.linkedin.com/in/mmazeika/" },
+		{ name: "Gabriel Mukobi", affiliation: "4", bioLink: "https://gabrielmukobi.com" },
+		{ name: "Ryan Hwang Kim", affiliation: "1, 5", bioLink: "https://www.linkedin.com/in/ryanhwangkim/" },
+		{ name: "Stephen Fitz", affiliation: "6", bioLink: "" },
+		{ name: "Dan Hendrycks", affiliation: "1", bioLink: "https://people.eecs.berkeley.edu/~hendrycks/" },
 	];
 
 	const affiliations = [
@@ -101,7 +101,7 @@ const HeaderPage = () => {
 				<Panel header={
 					<Button ghost className="customDashedButton">
 						<div className='header__button' style={{ textAlign: 'center', color: 'black' }}>
-							<span >Team</span>
+							<span >Authors</span>
 							<span style={{ marginLeft: "5px" }}>{activeKey.includes('1') ? <CaretUpOutlined style={{ color: 'black' }} /> : <CaretDownOutlined style={{ color: 'black' }} />}</span>
 						</div>
 
@@ -118,11 +118,13 @@ const HeaderPage = () => {
 					<Button ghost className='customDashedButton' href={paperLink} target="_blank">
 						<span className='header__button' style={{ textAlign: 'center', color: 'black' }}>
 							<FileOutlined />
+							&nbsp; Paper
 						</span>
 					</Button>
 					<Button ghost className='customDashedButton' href={githubLink} target="_blank">
 						<span className='header__button' style={{ textAlign: 'center', color: 'black' }}>
 							<GithubOutlined />
+							&nbsp; Github
 						</span>
 					</Button>
 				</Space>
