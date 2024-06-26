@@ -32,7 +32,7 @@ const BodyPage = () => {
 					</p>
 					<br />
 					<div className='outline__image'>
-						<img src='images/pipeline.png' alt='outline' style={{ maxWidth: "80%" }} />
+						<img src='images/pipeline.png' alt='outline' style={{ maxWidth: "100%" }} />
 					</div>
 					<p className="description">
 						Illustration of the safety task identification pipeline. (Step 1) We produce a matrix of scores
