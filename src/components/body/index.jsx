@@ -52,7 +52,7 @@ const BodyPage = () => {
 						<Panel header="1 - General Capabilities and Model Class Correlations" key="1" className="custom-panel">
 						<Row gutter={16}>
 							<Row gutter={16}>
-								<Col span={12}>
+								<Col xs={24} sm={24} md={24} lg={12} xl={12}>
 									<img src="images/4plots.png" alt="Adversarial Robustness" style={{ display: 'block', margin: '0 auto', width: '100%' }} />
 									{/* <Paragraph>
 									Observed correlations between capabilities scores and models' performance. 
@@ -63,7 +63,7 @@ const BodyPage = () => {
 									CC indicates the capabilities component of the corresponding benchmark.
 									</Paragraph> */}
 								</Col>
-								<Col span={12}>
+								<Col xs={24} sm={24} md={24} lg={12} xl={12}>
 									{/* <img src="images/capabilities_vs_log_flops.png" alt="Model capabilities vs log(FLOPS) graph" style={{ display: 'block', margin: '0 auto', width: '90%' }} /> */}
 									<Paragraph>
 									{/* We apply spectral analysis of benchmark scores to identify a unified underlying <emph>capabilities score</emph> for models in terms of their performance on a range of benchmarks. Unlike naive composite benchmarks that take the simple average of performance across component tests, we leverage the Spearman correlation and Eigenvalue decomposition to weight benchmarks according to their importance in distinguishing model performance, yielding a more nuanced and accurate measure of a model's overall capabilities.
@@ -176,7 +176,7 @@ const BodyPage = () => {
 					<Collapse bordered={false}>
 						<Panel header="2 - Adversarial Robustness" key="2" className="custom-panel">
 							<Row gutter={16}>
-								<Col span={12}>
+								<Col xs={24} sm={24} md={24} lg={12} xl={12}>
 									<Paragraph>
 										Adversarial robustness evaluates models' ability to maintain performance when faced with adversarial examples. We analyze whether these benchmarks measure novel properties or are highly correlated with general capabilities.
 										<br/> <br/>
@@ -188,7 +188,7 @@ const BodyPage = () => {
 										This demonstrates that evaluating correlations for multiple model classes is crucial for understanding whether a benchmark will be solved as general capabilities improve.
 									</Paragraph>
 								</Col>
-								<Col span={12}>
+								<Col xs={24} sm={24} md={24} lg={12} xl={12}>
 									<img src="images/adv_res.jpeg" alt="Adversarial Robustness" style={{ display: 'block', margin: '0 auto', width: '80%' }} />
 								</Col>
 							</Row>
@@ -197,13 +197,13 @@ const BodyPage = () => {
 					<Collapse bordered={false}>
 						<Panel header="3 - Bias" key="3" className="custom-panel">
 							<Row gutter={16}>
-								<Col span={8}>
+								<Col xs={24} sm={24} md={24} lg={8} xl={8}>
 									<Paragraph>
 									We investigate bias datasets aimed at quantifying language models' propagation of social stereotypes and harmful preconceptions. It is well-known that pretraining on internet data introduces bias, and one might expect that training larger models on more data would increase the amount of bias present. We test this hypothesis by measuring the capabilities coefficient of different LLM bias benchmarks.
 									<br/> <br/>
 									</Paragraph>
 								</Col>
-								<Col span={16}>
+								<Col xs={24} sm={24} md={24} lg={16} xl={16}>
 									<Paragraph>
 										<img src="images/bias_table.png" alt="Capabilities correlations of base and chat/instruct models on different bias evaluation datasets" style={{ display: 'block', margin: '0 auto', width: '90%' }} />
 									</Paragraph>
@@ -215,12 +215,12 @@ const BodyPage = () => {
 					<Collapse bordered={false}>
 						<Panel header="4 - Machine Ethics" key="4" className="custom-panel">
 							<Row gutter={16}>
-								<Col span={16}>
+								<Col xs={24} sm={24} md={24} lg={16} xl={16}>
 									Machine ethics benchmarks probe models' understanding of moral concepts. We find that machine ethics benchmarks tend to be highly correlated with general capabilities, indicating that internet-scale pretraining imbues LLMs with an understanding of ethics and morality. 
 									<br/><br/>
 									However, our results also show that this correlation is not identical across all areas of machine ethics. Some topics improve much more slowly with general capabilities, suggesting a need to ensure a balanced understanding of different ethical perspectives is present in models.
 								</Col>
-								<Col span={6}>
+								<Col xs={12} sm={12} md={12} lg={6} xl={6}>
 									<img src="images/ethics_table.png" alt="Capabilities correlations of base and chat/instruct models on different bias evaluation datasets" style={{ display: 'block', margin: '0 auto', width: '100%' }} />
 								</Col>
 							</Row>
@@ -228,8 +228,8 @@ const BodyPage = () => {
 					</Collapse>
 					<Collapse bordered={false}>
 						<Panel header="5 - Malicious Use" key="5" className="custom-panel">
-						<Row gutter={16}>
-								<Col span={16}>
+							<Row gutter={16}>
+								<Col xs={24} sm={24} md={24} lg={16} xl={16}>
 									<Paragraph>
 									Malicious use evaluations test whether models can resist being exploited for harmful ends, including spreading misinformation or enabling cybercrime. To bypass refusal training, many of these evaluations also employ adversarial prompts. 
 									<br/><br/>
@@ -239,7 +239,7 @@ const BodyPage = () => {
 									<br/> <br/>
 									</Paragraph>
 								</Col>
-								<Col span={6}>
+								<Col xs={12} sm={12} md={12} lg={6} xl={6}>
 									<Paragraph>
 										<img src="images/malicious_use_table.png" alt="Capabilities correlations of base and chat/instruct models on different malicious use evaluation datasets" style={{ display: 'block', margin: '0 auto', width: '90%' }} />
 									</Paragraph>
@@ -249,15 +249,15 @@ const BodyPage = () => {
 					</Collapse>
 					<Collapse bordered={false}>
 						<Panel header="6 - Rogue AI Risk" key="6" className="custom-panel">
-						<Row gutter={16}>
-								<Col span={10}>
+							<Row gutter={16}>
+								<Col xs={24} sm={24} md={24} lg={10} xl={10}>
 									<Paragraph>
 										Rogue AI risk evaluations probe risks related to deceptive model behavior, dishonesty, and power-seeking tendencies. Previously, it was unknown whether models become more power-seeking as they scale. 
 										<br/><br/>
 										We observe that measures of power-seeking tendencies and ethical violations decrease as general capabilities improve, but sycophancy worsens. This highlights how different aspects of rogue AI risk are correlated with general capabilities to different extents.
 									</Paragraph>
 								</Col>
-								<Col span={14}>
+								<Col xs={24} sm={24} md={24} lg={12} xl={12}>
 									<Paragraph>
 										<img src="images/rogue_ai_table.png" alt="Capabilities correlations of on rogue AI risk evaluations" style={{ display: 'block', margin: '0 auto', width: '100%' }} />
 									</Paragraph>
