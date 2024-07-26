@@ -27,16 +27,16 @@ const HeaderPage = () => {
 	}, [window.innerWidth]);
 
 	const authors = [
-		{ name: "Richard Ren", affiliation: "1, 2", bioLink: "https://github.com/notrichardren" },
-		{ name: "Steven Basart", affiliation: "1", bioLink: "https://stevenbas.art/" },
+		{ name: "Richard Ren", affiliation: "*, 1, 2", bioLink: "https://github.com/notrichardren" },
+		{ name: "Steven Basart", affiliation: "*, 1", bioLink: "https://stevenbas.art/" },
 		{ name: "Adam Khoja", affiliation: "1,3", bioLink: "" },
-		{ name: "Alexander Pan", affiliation: "3", bioLink: "https://aypan17.github.io/" },
-		{ name: "Alice Gatti", affiliation: "1", bioLink: "https://www.linkedin.com/in/gattialice/", contrib: "‡" },
+		{ name: "Mantas Mazeika", affiliation: "1", bioLink: "https://www.linkedin.com/in/mmazeika/" },
+		{ name: "Alice Gatti", affiliation: "1", bioLink: "https://www.linkedin.com/in/gattialice/"},
 		{ name: "Long Phan", affiliation: "1", bioLink: "https://longphan.ai/" },
 		{ name: "Xuwang Yin", affiliation: "1", bioLink: "https://xuwangyin.github.io/" },
-		{ name: "Mantas Mazeika", affiliation: "1", bioLink: "https://www.linkedin.com/in/mmazeika/" },
+		{ name: "Alexander Pan", affiliation: "3", bioLink: "https://aypan17.github.io/" },
 		{ name: "Gabriel Mukobi", affiliation: "4", bioLink: "https://gabrielmukobi.com" },
-		{ name: "Ryan Hwang Kim", affiliation: "1, 5", bioLink: "https://www.linkedin.com/in/ryanhwangkim/" },
+		{ name: "Ryan H. Kim", affiliation: "1, 5", bioLink: "https://www.linkedin.com/in/ryanhwangkim/" },
 		{ name: "Stephen Fitz", affiliation: "6", bioLink: "" },
 		{ name: "Dan Hendrycks", affiliation: "1", bioLink: "https://people.eecs.berkeley.edu/~hendrycks/" },
 	];
@@ -47,7 +47,7 @@ const HeaderPage = () => {
 		"UC Berkeley",
 		"Stanford University",
 		"Yale University",
-		"Keio University",
+		"Keio University, *Equal contribution",
 	];
 
 	let breakAuthorIndices = isMobile ? [1, 53] : [3, 7, 13, 18, 22, 27, 32, 37, 42, 47,50, 53]
@@ -91,10 +91,13 @@ const HeaderPage = () => {
 
 	return (
 		<div className='header'>
-			<h1 className='header__title'>
+			{/* <h1 className='header__title'>
 				How Safety Benchmarks Measure{' '}
 				<span style={capabilitiesStyle}>Capabilities</span> Instead of{' '}
 				<span style={safetyStyle}>Safety</span>
+			</h1> */}
+			<h1 className='header__title'>
+				What is "AI Safety"?
 			</h1>
 
 			<Collapse ghost className="custom-collapse" bordered={false} onChange={onCollapseChange}>

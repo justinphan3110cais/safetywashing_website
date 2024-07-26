@@ -1,3 +1,4 @@
+import React from 'react';
 import './assets/style/index.scss';
 import BodyPage from './components/body';
 import HeaderPage from './components/header';
