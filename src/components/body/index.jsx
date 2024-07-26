@@ -78,9 +78,11 @@ const BodyPage = () => {
 								</Col>
 								<Col xs={24} sm={24} md={24} lg={12} xl={12}>
 									<Paragraph>
-									<Latex>{`To establish a capabilities baseline, we collect scores from $m$ models on $b$ capabilities benchmarks and form a matrix of results from benchmarks, which we call the evaluation matrix $E \\in \\mathbb{R}^{m \\times b}$, where $E_{ij}$ is the score of the $i$-th model on the $j$-th benchmark. $E$ is normalized so that each column has mean 0 and variance 1, and PCA is performed on $E$. The capabilities score is the first principal component vector of $E$, and is represented as $\\text{Capabilities Score}_i = (E \\cdot \\text{PC}_1)_i \\quad \\text{for } i = 1, \\ldots, m$.
-									For each safety benchmark, we evaluate the same set of $m$ models, redefine metrics such that a higher score indicates improved safety, and normalize the safety benchmark scores to mean 0 and variance 1. We compute the Spearman correlation across models between the capabilities scores and the safety benchmark scores: $\\text{Capabilities Correlation} = \\text{corrmodels(Capabilities Score, Safety Benchmark)}$. 
-									A high correlation indicates the benchmark likely measures capabilities rather than distinct safety attributes. A low correlation indicates the benchmarks is measuring attributes distinct from general capabilities, while a negative correlation indicates models obtain worse safety properties as capabilities increase.`}</Latex>
+									<Latex>{`To establish a capabilities baseline, we collect scores from $m$ models on $b$ capabilities benchmarks and form a matrix of results from benchmarks, which we call the evaluation matrix $E \\in \\mathbb{R}^{m \\times b}$, where $E_{ij}$ is the score of the $i$-th model on the $j$-th benchmark. $E$ is normalized so that each column has mean 0 and variance 1, and PCA is performed on $E$. The capabilities score is the first principal component vector of $E$, and is represented as:`}</Latex>
+									<br/><br/><Latex>{`$\\text{Capabilities Score}_i = (E \\cdot \\text{PC}_1)_i \\quad \\text{for } i = 1, \\ldots, m$`}</Latex>.<br/><br/>
+									<Latex>{`For each safety benchmark, we evaluate the same set of $m$ models, redefine metrics such that a higher score indicates improved safety, and normalize the safety benchmark scores to mean 0 and variance 1. We compute the Spearman correlation across models between the capabilities scores and the safety benchmark scores:`}</Latex>
+									<br/><br/><Latex>{`$\\text{Capabilities Correlation} = \\text{corrmodels(Capabilities Score, Safety Benchmark)}$`}</Latex>.<br/><br/>
+									A high correlation indicates the benchmark likely measures capabilities rather than distinct safety attributes. A low correlation indicates the benchmarks is measuring attributes distinct from general capabilities, while a negative correlation indicates models obtain worse safety properties as capabilities increase.
 									</Paragraph>
 								</Col>
 							</Row>
@@ -134,8 +136,11 @@ const BodyPage = () => {
 							
 							<br/> <br/>
 							<strong>Calibration</strong>
-							TODO: Calibration methods equation, figure out latex!
-
+							<br/>
+							<Latex>{`Brier Score: $\\mathbb{E}_X \\left[ \\frac{1}{K}\\sum_{k=1}^K \\left( \\mathbb{P}(\\widehat{Y} = k \\mid X) - \\mathbf{1}\\left[Y=k\\right] \\right)^2 \\right]$`}</Latex>
+							<br/>
+							<Latex>{`Root Mean Squared (RMS) Calibration Error: $\\sqrt{\\mathbb{E}_C \\left[ \\left( \\mathbb{P}(\\widehat{Y} = Y \\mid C = c) - c \\right)^2 \\right]}$`}</Latex>
+							<br/>
 							Calibration datasets measure how well models can express the limits of their competency by accurately conveying their uncertainty
 							We find that calibration's capabilities correlation depends on metric. The capabilities correlation for RMSCE is low across vision (−1.2%) and language (21.6%) models. However, comparing Brier scores across models seems to show a strong correlation with accuracy across vision (98.4%) and language (90.5%) models. 
 							Our analysis serves as an illustrative example of how safetywashing can occur. While the Brier score is often used to compare different calibration techniques on a single model, using it as a metric across models is highly misleading. This suggests that RMS calibration error should be used.
