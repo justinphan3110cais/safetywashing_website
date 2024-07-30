@@ -1,16 +1,12 @@
-.custom-divider .ant-divider-inner-text {
-    color: inherit;
-    font-size: 20px;
-}
-@media screen and (max-width: 1024px) {
-    .custom-divider .ant-divider-inner-text {
-        color: inherit;
-        font-size: 15px;
-    }
-}
 .custom-divider.ant-divider-horizontal.ant-divider-with-text-left::before,
 .custom-divider.ant-divider-horizontal.ant-divider-with-text-left::after {
     border-top: 1px solid #93B3A5; /* Change the color to #93B3A5 */
+}
+
+
+.red-divider.ant-divider-horizontal.ant-divider-with-text-left::before,
+.red-divider.ant-divider-horizontal.ant-divider-with-text-left::after {
+    border-top: 1px solid #ED9F9B; /* Change the color to #93B3A5 */
 }
 
 .description {
@@ -20,12 +16,6 @@
 .custom-panel {
     background: white !important;
     font-size: 18px; 
-  }
-  
-.quote{
-    font-size: 18px;
-    font-style: italic;
-    text-align: center;
 }
 
 .equation{
