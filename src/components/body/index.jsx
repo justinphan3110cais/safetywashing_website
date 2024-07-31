@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Anchor from "./anchor";
 import { Divider } from "antd";
 import "./BodyPage.scss";
 import StoryBox from "./storybox";
