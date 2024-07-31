@@ -3,6 +3,7 @@ import Anchor from "./anchor";
 import { Divider } from "antd";
 import "./BodyPage.scss";
 import StoryBox from "./storybox";
+import { Citation } from "./citation";
 
 const BodyPage = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -20,7 +21,7 @@ const BodyPage = () => {
               className="custom-divider"
             >
               <div className="flex items-center text-xl sm:text-2xl">
-                <span>Motivations</span>
+                <span>Motivation</span>
               </div>
             </Divider>
           </h2>
@@ -30,8 +31,8 @@ const BodyPage = () => {
           <p className="text-base mt-4 font-normal leading-[30px] text-left mx-auto">
             As artificial intelligence systems grow more powerful, there has
             been increasing interest in{" "}
-			<span className="italic font-medium bg-[#C5D5D2] px-1.5 whitespace-nowrap inline-block">
-			<it>AI Safety</it>
+            <span className="italic font-medium bg-[#C5D5D2] px-1.5 whitespace-nowrap inline-block">
+              <it>AI Safety</it>
             </span>{" "}
             research to address emerging and future risks. However, the field of
             AI safety remains poorly defined and inconsistently measured,
@@ -56,7 +57,7 @@ const BodyPage = () => {
         </div>
         <div className="mt-8 mb-8 flex flex-col items-center">
           <img
-            src="images/splash.png"
+            src="images/splash.svg"
             alt="Safety Wasing"
             className="w-[95%] md:max-w-[60%]"
           />
@@ -102,13 +103,24 @@ const BodyPage = () => {
             safety properties of AI systems relative to other attributes are
             misconstrued as “safety research.”
           </p>
-          <div className="mt-8 mb-2 flex flex-col items-center">
-            <img
-              src="images/safetywashing_explanation.png"
-              alt="outline"
-              className="w-[95%] md:max-w-[85%]"
-            />
-            <p className="text-sm sm:text-base italic text-left mt-4 max-w-[85%]">
+          <div className="mt-8 mb-2">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
+              <div className="w-full md:w-[30%]">
+                <img
+                  src="images/circle_safetywashing.svg"
+                  alt="Circle Safetywashing"
+                  className="w-full"
+                />
+              </div>
+              <div className="w-full md:w-[70%]">
+                <img
+                  src="images/safetywashing_explanation.svg"
+                  alt="Safetywashing Explanation"
+                  className="w-full"
+                />
+              </div>
+            </div>
+            <p className="text-sm sm:text-base italic text-left mt-4 max-w-[85%] mx-auto">
               Figure 2: The tight connection between many safety properties and
               capabilities can enable safetywashing, where capabilities
               advancements (e.g., training a larger model) can be advertised as
@@ -119,21 +131,23 @@ const BodyPage = () => {
           </div>
           <br />
         </div>
-
-        <div className="w-full flex flex-col items-center">
-          <h3 className="font-semibold leading-9 text-center w-full">
-            <div className="flex justify-center items-center">
-              <span className="text-xl sm:text-2xl">Method</span>
+        <h2 className="font-semibold leading-9 mb-4.5 text-left mx-auto">
+          <Divider
+            orientation={!isMobile ? "left" : "center"}
+            className="custom-divider"
+          >
+            <div className="flex items-center text-xl sm:text-2xl">
+              <span>Method</span>
             </div>
-          </h3>
-          <div className="w-32 h-0.5 bg-gray-600 rounded-full"></div>
-        </div>
+          </Divider>
+        </h2>
         <div className="mt-8 mb-8 flex flex-col items-center">
           <img
             src="images/pipeline.svg"
             alt="outline"
             className="w-[95%] md:max-w-[85%]"
           />
+
           <p className="text-sm sm:text-base text-left mt-4 max-w-[85%]">
             We derive a simple and highly general methodology for determining
             whether a safety benchmark is entangled with upstream model
@@ -160,43 +174,7 @@ const BodyPage = () => {
         </div>
         <StoryBox />
       </div>
-      <div className="mb-10">
-        <h2 className="text-2xl font-semibold leading-9 mb-4.5 text-left mx-auto">
-          <Divider orientation="left" className="custom-divider">
-            Citation
-          </Divider>
-        </h2>
-        <div className="citation bg-gray-100 p-4 rounded-lg">
-            <div>
-              <div>
-                {`@article{ren2024safety  ,`}
-                <br />
-              </div>
-              <div className="pl-8">
-                {`title={xxx},`}
-                <br />
-              </div>
-              <div className="pl-8">
-                {`author={xxxx},`}
-                <br />
-              </div>
-              <div className="pl-8">
-                {`year={2024},`}
-                <br />
-              </div>
-              <div className="pl-8">
-                {`eprint={xxxx.xxxxx},`}
-                <br />
-              </div>
-              <div className="pl-8">
-                {`archivePrefix={arXiv},`}
-                <br />
-              </div>
-              <div className="pl-8">{`primaryClass={cs.LG}`}</div>
-              <div>{`}`}</div>
-            </div>
-        </div>
-      </div>
+      <Citation/>
     </div>
   );
 };
