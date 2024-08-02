@@ -87,7 +87,7 @@ const BodyPage = () => {
             While we don't claim that safety and capabilities are necessarily orthogonal, we do claim that AI safety research efforts should focus on "differential safety progress" – making models safer beyond the default trajectory of capability advances. 
           </p>
           <div className="mt-8 mb-2">
-            <div className="text-sm sm:text-base italic text-left mt-4 max-w-[85%]">
+            <div className="mt-8 mb-8 flex flex-col items-center">
               <div className="w-full md:w-[70%]">
                 <img
                   src="images/safetywashing_explanation.svg"
