@@ -80,10 +80,13 @@ const BodyPage = () => {
               <it>safetywashing</it>
             </span> where safety metrics can be improved when releasing more capable models without tangible safety-specific effort.
 
-            In computer systems, for example, performance and security improvements are more readily distinguishable; were they as intertwined as in AI, mere speed enhancements might be misrepresented as security research. We’re not claiming that safety and capabilities are necessarily orthogonal. But we do claim that AI safety research efforts should focus on "differential safety progress" – making models safer beyond the default trajectory of capability advances. 
+                      </p>
+
+          <p className="text-base mt-4 font-normal leading-[30px] text-left mx-auto">
+            We’re not claiming that safety and capabilities are necessarily orthogonal. But we do claim that AI safety research efforts should focus on "differential safety progress" – making models safer beyond the default trajectory of capability advances. 
           </p>
           <div className="mt-8 mb-2">
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
+            <div className="text-sm sm:text-base italic text-left mt-4 max-w-[85%]">
               <div className="w-full md:w-[70%]">
                 <img
                   src="images/safetywashing_explanation.svg"
