@@ -120,11 +120,6 @@ const HeaderPage = () => {
     setActiveKey(key);
   };
 
-<<<<<<< HEAD
-  const githubLink = "https://github.com/rishub-tamirisa/tamper-resistance/";
-=======
-  const githubLink = "https://arxiv.org/abs/2407.21792";
->>>>>>> 324b360b137bc0bba533872303dd9c3e1c9745ce
   const paperLink = "https://arxiv.org/abs/2407.21792";
 
   return (
