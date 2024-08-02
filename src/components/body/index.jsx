@@ -81,9 +81,9 @@ const BodyPage = () => {
               <it>safetywashing</it>
             </span> where safety metrics can be improved when releasing more capable models without tangible safety-specific effort.
 
-                      </p>
+{/*                       </p>
 
-          <p className="text-base mt-4 font-normal leading-[30px] text-left mx-auto">
+          <p className="text-base mt-4 font-normal leading-[30px] text-left mx-auto"> */}
             While we don't claim that safety and capabilities are necessarily orthogonal, we do claim that AI safety research efforts should focus on "differential safety progress" – making models safer beyond the default trajectory of capability advances. 
           </p>
           <div className="mt-8 mb-2">
