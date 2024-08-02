@@ -33,18 +33,15 @@ const BodyPage = () => {
             <span className="italic font-medium bg-[#C5D5D2] px-1.5 whitespace-nowrap inline-block">
               <it>AI Safety</it>
             </span>{" "}
-            research to address emerging and future risks. However, the idea of
-            AI safety remains poorly defined and inconsistently measured,
-            leading to confusion about how researchers can contribute. This lack
-            of clarity is compounded by the unclear relationship between AI
-            safety benchmarks and upstream general capabilities (e.g., general
-            knowledge and reasoning).  <br />
-            <br />
-            To address these issues, we conduct a
+            research to address emerging and future risks. We conduct a
             comprehensive empirical meta-analysis of AI safety benchmarks to date,
             analyzing their correlation with general capabilities across dozens
             of models and providing a survey of existing directions in AI
-            safety.
+            <br />
+            <br />
+            In doing so, we can provide clarity to the unclear relationship between AI
+            safety benchmarks and upstream general capabilities (e.g., general
+            knowledge and reasoning). 
           </p>
           <br />
         </div>
