@@ -12,7 +12,7 @@ export const Citation = () => {
       <div className="citation bg-gray-100 p-4 rounded-lg text-xs">
         <div>
           <div>
-            {`@misc{ren2024safetywashingaisafetybenchmarks,`}
+            {`@article{ren2024safetywashing,`}
             <br />
           </div>
           <div className="pl-8">
@@ -20,7 +20,7 @@ export const Citation = () => {
             <br />
           </div>
           <div className="pl-8">
-            {`  author={Richard Ren and Steven Basart and Adam Khoja and Alice Gatti and Long Phan and Xuwang Yin and Mantas Mazeika and Alexander Pan and Gabriel Mukobi and Ryan H. Kim and Stephen Fitz and Dan Hendrycks},`}
+            {`author={Richard Ren and Steven Basart and Adam Khoja and Alice Gatti and Long Phan and Xuwang Yin and Mantas Mazeika and Alexander Pan and Gabriel Mukobi and Ryan H. Kim and Stephen Fitz and Dan Hendrycks},`}
             <br />
           </div>
           <div className="pl-8">

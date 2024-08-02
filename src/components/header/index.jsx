@@ -120,7 +120,11 @@ const HeaderPage = () => {
     setActiveKey(key);
   };
 
+<<<<<<< HEAD
   const githubLink = "https://github.com/rishub-tamirisa/tamper-resistance/";
+=======
+  const githubLink = "https://arxiv.org/abs/2407.21792";
+>>>>>>> 324b360b137bc0bba533872303dd9c3e1c9745ce
   const paperLink = "https://arxiv.org/abs/2407.21792";
 
   return (
@@ -180,7 +184,7 @@ const HeaderPage = () => {
           >
             <span className="text-center mt-auto text-black text-base font-medium leading-6 mb-3.5">
               <GithubOutlined className="mr-1" />
-              Github
+              Github (Coming Soon)
             </span>
           </Button> */}
         </Space>

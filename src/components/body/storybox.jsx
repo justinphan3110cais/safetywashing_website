@@ -148,11 +148,7 @@ const StoryBox = () => {
         </Divider>
       </h2>
       <p className="text-base mt-4 mb-4 font-normal leading-[30px] text-left mx-auto">
-        In this section we will cover key intuitive arguments for and against
-        alignment, and thereby show how intuitive arguments and their underlying
-        distinctions can be a highly fragile and unreliable guide for
-        determining a research area's relation to upstream general capabilities
-        and tractability.
+        Often, intuitive arguments for and against on various AI safety subareas can be a highly fragile and unreliable guide for determining a research area's relation to upstream general capabilities and tractability. By evaluating benchmarks across AI safety subareas, our research aims to provide empirical clarity to the commonly-made arguments and distinctions.
       </p>
       <div className="flex flex-wrap justify-center mb-8">
         {subtasks.map((task, index) => (
