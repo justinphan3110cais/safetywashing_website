@@ -56,9 +56,7 @@ const BodyPage = () => {
           />
           <p className="text-sm sm:text-base italic text-left mt-4 max-w-[85%]">
             Figure 1: Across various safety areas, we investigate whether
-            benchmarks are correlated with capabilities, ultimately obscuring
-            differential safety progress as increased performance is highly
-            correlated with upstream model capabilities.
+            benchmarks are correlated with capabilities.
           </p>
         </div>
 
@@ -80,7 +78,7 @@ const BodyPage = () => {
             However, we find that many safety benchmarks highly correlate with upstream model capabilities (e.g. MMLU, MATH, GSM8K) by design, potentially enabling 
             <span className="italic font-medium  bg-[#ED9F9B] px-1.5 whitespace-nowrap inline-block">
               <it>safetywashing</it>
-            </span> where safety metrics can be improved when releasing more capable models – without tangible safety-specific effort.
+            </span> where safety metrics can be improved when releasing more capable models without tangible safety-specific effort.
 
             In computer systems, for example, performance and security improvements are more readily distinguishable; were they as intertwined as in AI, mere speed enhancements might be misrepresented as security research. We’re not claiming that safety and capabilities are necessarily orthogonal. But we do claim that AI safety research efforts should focus on "differential safety progress" – making models safer beyond the default trajectory of capability advances. 
           </p>
