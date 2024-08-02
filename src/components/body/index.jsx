@@ -73,7 +73,7 @@ const BodyPage = () => {
           </p>
           <p className="text-base mt-4 font-normal leading-[30px] text-left mx-auto">
             However, we find that many safety benchmarks highly correlate with upstream model capabilities benchmarks (e.g. MMLU, MATH, GSM8K) by design, potentially enabling 
-            
+            {' '}
             <span className="italic font-medium  bg-[#ED9F9B] px-1.5 whitespace-nowrap inline-block">
               <it>safetywashing</it>
             </span> where safety metrics can be improved when releasing more capable models without tangible safety-specific effort. While we don't claim that safety and capabilities are necessarily orthogonal, we do claim that AI safety research efforts should focus on "differential safety progress" – making models safer beyond the default trajectory of capability advances. 
@@ -97,7 +97,7 @@ const BodyPage = () => {
               Figure 2: The tight connection between many safety properties and
               capabilities can enable safetywashing, where capabilities
               advancements (e.g., training a larger model) can be advertised as
-              progress on "AI safety." This confuses the research community to
+              progress on "AI safety research." This confuses the research community to
               the developments that have occurred, distorting the academic
               discourse.
             </p>
