@@ -33,7 +33,7 @@ const BodyPage = () => {
             <span className="italic font-medium bg-[#C5D5D2] px-1.5 whitespace-nowrap inline-block">
               <it>AI Safety</it>
             </span>{" "}
-            research to address emerging and future risks. However, the field of
+            research to address emerging and future risks. However, the idea of
             AI safety remains poorly defined and inconsistently measured,
             leading to confusion about how researchers can contribute. This lack
             of clarity is compounded by the unclear relationship between AI
@@ -41,7 +41,7 @@ const BodyPage = () => {
             knowledge and reasoning).  <br />
             <br />
             To address these issues, we conduct a
-            comprehensive meta-analysis of AI safety benchmarks, empirically
+            comprehensive empirical meta-analysis of AI safety benchmarks to date,
             analyzing their correlation with general capabilities across dozens
             of models and providing a survey of existing directions in AI
             safety.
@@ -76,6 +76,7 @@ const BodyPage = () => {
           </p>
           <p className="text-base mt-4 font-normal leading-[30px] text-left mx-auto">
             However, we find that many safety benchmarks highly correlate with upstream model capabilities (e.g. MMLU, MATH, GSM8K) by design, potentially enabling 
+            
             <span className="italic font-medium  bg-[#ED9F9B] px-1.5 whitespace-nowrap inline-block">
               <it>safetywashing</it>
             </span> where safety metrics can be improved when releasing more capable models without tangible safety-specific effort.
@@ -83,7 +84,7 @@ const BodyPage = () => {
                       </p>
 
           <p className="text-base mt-4 font-normal leading-[30px] text-left mx-auto">
-            We’re not claiming that safety and capabilities are necessarily orthogonal. But we do claim that AI safety research efforts should focus on "differential safety progress" – making models safer beyond the default trajectory of capability advances. 
+            While we don't claim that safety and capabilities are necessarily orthogonal, we do claim that AI safety research efforts should focus on "differential safety progress" – making models safer beyond the default trajectory of capability advances. 
           </p>
           <div className="mt-8 mb-2">
             <div className="text-sm sm:text-base italic text-left mt-4 max-w-[85%]">
