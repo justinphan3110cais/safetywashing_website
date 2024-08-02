@@ -75,7 +75,7 @@ const BodyPage = () => {
             Under the umbrella of AI safety research, a wide variety of benchmarks have been proposed that claim to measure desirable safety properties, distinct from the general capabilities of models.
           </p>
           <p className="text-base mt-4 font-normal leading-[30px] text-left mx-auto">
-            However, we find that many safety benchmarks highly correlate with upstream model capabilities (e.g. MMLU, MATH, GSM8K) by design, potentially enabling 
+            However, we find that many safety benchmarks highly correlate with upstream model capabilities benchmarks (e.g. MMLU, MATH, GSM8K) by design, potentially enabling 
             
             <span className="italic font-medium  bg-[#ED9F9B] px-1.5 whitespace-nowrap inline-block">
               <it>safetywashing</it>
