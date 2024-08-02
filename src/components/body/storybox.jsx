@@ -45,7 +45,7 @@ const subtasks = [
   },
   {
     title: "Bias",
-    color: "#AFC18B",
+    color: "#CDE6C8",
     workOn: {
       title: "We should work on bias because:",
       points: [
@@ -161,7 +161,7 @@ const StoryBox = () => {
             onClick={() => handleTaskChange(index)}
             className={`m-2 px-4 py-2 text-xs sm:text-sm rounded-full ${
               index === currentTaskIndex
-                ? task.color === "#F5DE8C"
+                ? task.color === "#F5DE8C" || task.color === "#CDE6C8"
                   ? "text-black"
                   : "text-white"
                 : "bg-gray-200 text-gray-800"
@@ -193,7 +193,7 @@ const StoryBox = () => {
           <div className="md:w-1/2 bg-white rounded-lg shadow-lg overflow-hidden">
             <div
               className={`text-${
-                currentTask.color === "#F5DE8C" ? "black" : "white"
+                currentTask.color === "#F5DE8C" || currentTask.color === "#CDE6C8" ? "black" : "white"
               } py-4 px-6`}
               style={{ backgroundColor: currentTask.color }}
             >
@@ -210,8 +210,8 @@ const StoryBox = () => {
                       className="font-medium"
                       style={{
                         color:
-                          currentTask.color === "#F5DE8C"
-                            ? "#CC9900"
+                          currentTask.color === "#F5DE8C" || currentTask.color === "#CDE6C8"
+                            ? (currentTask.color === "#F5DE8C" ? "#CC9900" : "#9BC889")
                             : currentTask.color,
                       }}
                     >
@@ -226,7 +226,7 @@ const StoryBox = () => {
           <div className="md:w-1/2 bg-white rounded-lg shadow-lg overflow-hidden">
             <div
               className={`text-${
-                currentTask.color === "#F5DE8C" ? "black" : "white"
+                currentTask.color === "#F5DE8C" || currentTask.color === "#CDE6C8" ? "black" : "white"
               } py-4 px-6`}
               style={{ backgroundColor: currentTask.color }}
             >
@@ -243,8 +243,8 @@ const StoryBox = () => {
                       className="font-medium"
                       style={{
                         color:
-                          currentTask.color === "#F5DE8C"
-                            ? "#CC9900"
+                          currentTask.color === "#F5DE8C" || currentTask.color === "#CDE6C8"
+                            ? (currentTask.color === "#F5DE8C" ? "#CC9900" : "#9BC889")
                             : currentTask.color,
                       }}
                     >

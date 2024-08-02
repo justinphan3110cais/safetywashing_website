@@ -121,14 +121,14 @@ const HeaderPage = () => {
   };
 
   const githubLink = "https://github.com/rishub-tamirisa/tamper-resistance/";
-  const paperLink = "https://arxiv.org/";
+  const paperLink = "https://arxiv.org/abs/2407.21792";
 
   return (
     <div className="mb-[31px]">
       <h1 className="max-w-3xl mx-auto text-xl sm:text-4xl md:text-4xl font-medium leading-tight text-center mt-20 mb-4.5">
 		<span className="bg-[#ED9F9B] px-1.5">Safetywashing:</span> <span>
           Do AI Safety Benchmarks
-          <br /> Actually Measure <span className="bg-[#C5D5D2]">Safety Progress</span>?
+          <br /> Actually Measure <span className="bg-[#CDE6C8]">Safety Progress</span>?
         </span>
       </h1>
       <Collapse
@@ -172,7 +172,7 @@ const HeaderPage = () => {
               Paper
             </span>
           </Button>
-          <Button
+          {/* <Button
             ghost
             className="customDashedButton"
             href={githubLink}
@@ -182,7 +182,7 @@ const HeaderPage = () => {
               <GithubOutlined className="mr-1" />
               Github
             </span>
-          </Button>
+          </Button> */}
         </Space>
       </div>
     </div>

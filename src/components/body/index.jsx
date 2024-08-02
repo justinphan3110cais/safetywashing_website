@@ -30,7 +30,7 @@ const BodyPage = () => {
           <p className="text-base mt-4 font-normal leading-[30px] text-left mx-auto">
             As artificial intelligence systems grow more powerful, there has
             been increasing interest in{" "}
-            <span className="italic font-medium bg-[#C5D5D2] px-1.5 whitespace-nowrap inline-block">
+            <span className="italic font-medium bg-[#CDE6C8] px-1.5 whitespace-nowrap inline-block">
               <it>AI Safety</it>
             </span>{" "}
             research to address emerging and future risks. However, the field of
@@ -173,7 +173,7 @@ const BodyPage = () => {
         </div>
         <StoryBox />
       </div>
-      <Citation/>
+      <Citation />
     </div>
   );
 };
