@@ -140,7 +140,7 @@ const StoryBox = () => {
       <h2 className="font-semibold leading-9 mb-4.5 text-left mx-auto">
         <Divider
           orientation={!isMobile ? "left" : "center"}
-          className="custom-divider"
+          className="red-divider"
         >
           <div className="flex items-center text-xl sm:text-2xl">
             <span>Dubious Arguments</span>
