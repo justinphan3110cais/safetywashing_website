@@ -66,14 +66,14 @@ const BodyPage = () => {
             </Divider>
           </h2>
           <p className="text-base mt-4 font-normal leading-[30px] text-left mx-auto">
-            Under the umbrella of AI safety research, a wide variety of benchmarks have been proposed that claim to measure desirable safety properties, distinct from the general capabilities of models.
+            Under the umbrella of AI safety research, a wide variety of benchmarks have been proposed that claim to measure desirable safety properties, distinct from the general capabilities of models. However, we find that many safety benchmarks highly correlate with general model capabilities (e.g. MMLU, MATH, GSM8K).
           </p>
           <p className="text-base mt-4 font-normal leading-[30px] text-left mx-auto">
-            However, we find that many safety benchmarks highly correlate with upstream model capabilities benchmarks (e.g. MMLU, MATH, GSM8K) by design. While we don't claim that safety and capabilities are necessarily orthogonal, we do claim that AI safety research efforts should focus on <span className="italic font-medium">differential safety progress</span> – making models safer beyond the default trajectory of capability advances. High correlations enable
+            While we don't claim that safety and capabilities are necessarily orthogonal, we do claim that AI safety research efforts should focus on <span className="italic font-medium">differential safety progress</span> – making models safer beyond the default trajectory of capability advances. However, high correlations enable
             {' '}
             <span className="italic font-medium  bg-[#ED9F9B] px-1.5 whitespace-nowrap inline-block">
               <it>safetywashing</it>
-            </span> where capabilities advancements can be misrepresented as safety research. Furthermore, effective differential safety research should anticipate and work on benchmarks and problem areas that will persist in more capable future models, not just fixate on current weaknesses which result from low capabilities. 
+            </span> where capabilities advancements can be misrepresented as safety research. 
 
 
                        </p>
@@ -83,8 +83,6 @@ const BodyPage = () => {
           (2) create safety benchmarks that isolate safety-relevant properties less tied to general capabilities, to better measure and incentivize differential progress.
              </p> */}
           
-          <p className="text-base mt-4 font-normal leading-[30px] text-left mx-auto"> */}
-                     </p>
           <div className="mt-8 mb-2">
             <div className="mt-8 mb-8 flex flex-col items-center">
               <div className="w-full md:w-[70%]">
