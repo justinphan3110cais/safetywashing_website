@@ -121,6 +121,7 @@ const HeaderPage = () => {
   };
 
   const paperLink = "https://arxiv.org/abs/2407.21792";
+  const githubLink = "https://github.com/centerforaisafety/safetywashing";
 
   return (
     <div className="mb-[31px]">
@@ -171,7 +172,7 @@ const HeaderPage = () => {
               Paper
             </span>
           </Button>
-          {/* <Button
+          <Button
             ghost
             className="customDashedButton"
             href={githubLink}
@@ -179,9 +180,9 @@ const HeaderPage = () => {
           >
             <span className="text-center mt-auto text-black text-base font-medium leading-6 mb-3.5">
               <GithubOutlined className="mr-1" />
-              Github (Coming Soon)
+              GitHub
             </span>
-          </Button> */}
+          </Button>
         </Space>
       </div>
     </div>
