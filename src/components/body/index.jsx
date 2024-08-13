@@ -73,11 +73,16 @@ const BodyPage = () => {
             {' '}
             <span className="italic font-medium  bg-[#ED9F9B] px-1.5 whitespace-nowrap inline-block">
               <it>safetywashing</it>
-            </span> where capabilities advancements can be misrepresented as safety research. 
+            </span> where capabilities advancements can be misrepresented as safety research. Furthermore, effective differential safety research should anticipate and work on benchmarks and problem areas that will persist in more capable future models, not just fixate on current weaknesses which result from low capabilities. 
 
 
-{/*                       </p>
-
+                       </p>
+{/* 
+           <p className="text-base mt-4 font-normal leading-[30px] text-left mx-auto">
+             Thereby, safety researchers ought to focus on research areas with low/negative capabilities correlations, and 
+          (2) create safety benchmarks that isolate safety-relevant properties less tied to general capabilities, to better measure and incentivize differential progress.
+             </p> */}
+          
           <p className="text-base mt-4 font-normal leading-[30px] text-left mx-auto"> */}
                      </p>
           <div className="mt-8 mb-2">
