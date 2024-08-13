@@ -73,7 +73,7 @@ const BodyPage = () => {
             {' '}
             <span className="italic font-medium  bg-[#ED9F9B] px-1.5 whitespace-nowrap inline-block">
               <it>safetywashing</it>
-            </span> where capabilities advancements can be misrepresented as safety research. While we don't claim that safety and capabilities are necessarily orthogonal, we do claim that AI safety research efforts should focus on <span className="italic font-medium">differential safety progress</span> – making models safer beyond the default trajectory of capability advances.
+            </span> – where capabilities advancements can be misrepresented as safety research. While we don't claim that safety and capabilities are necessarily orthogonal, we do claim that AI safety research efforts should focus on <span className="italic font-medium">differential safety progress</span> – making models safer beyond the default trajectory of capability advances.
 
 
                        </p>
