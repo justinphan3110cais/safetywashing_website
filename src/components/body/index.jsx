@@ -36,8 +36,8 @@ const BodyPage = () => {
             research to address emerging and future risks. We conduct a
             comprehensive empirical meta-analysis of AI safety benchmarks to date,
             analyzing their correlation with general capabilities across dozens
-            of models and providing a survey of existing directions in AI. In doing so, we provide clarity whether AI
-            safety benchmarks are measuring truly distinct properties, or heavily entangled with upstream general capabilities (e.g. general
+            of models and providing a survey of existing directions in AI. In doing so, we provide clarity whether common AI
+            safety benchmarks are measuring truly distinct properties or are heavily entangled with upstream general capabilities (e.g. general
             knowledge and reasoning). 
           </p>
           <br />
