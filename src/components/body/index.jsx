@@ -36,8 +36,8 @@ const BodyPage = () => {
             research to address emerging and future risks. We conduct a
             comprehensive empirical meta-analysis of AI safety benchmarks to date,
             analyzing their correlation with general capabilities across dozens
-            of models and providing a survey of existing directions in AI. In doing so, we provide clarity to the unclear distinction made between AI
-            safety benchmarks and upstream general capabilities benchmarks (e.g., general
+            of models and providing a survey of existing directions in AI. In doing so, we provide clarity whether AI
+            safety benchmarks are measuring truly distinct properties, or heavily entangled with upstream general capabilities (e.g., general
             knowledge and reasoning). 
           </p>
           <br />
@@ -69,11 +69,11 @@ const BodyPage = () => {
             Under the umbrella of AI safety research, a wide variety of benchmarks have been proposed that claim to measure desirable safety properties, distinct from the general capabilities of models.
           </p>
           <p className="text-base mt-4 font-normal leading-[30px] text-left mx-auto">
-            However, we find that many safety benchmarks highly correlate with upstream model capabilities benchmarks (e.g. MMLU, MATH, GSM8K) by design, potentially enabling 
+            However, we find that many safety benchmarks highly correlate with upstream model capabilities benchmarks (e.g. MMLU, MATH, GSM8K) by design. While we don't claim that safety and capabilities are necessarily orthogonal, we do claim that AI safety research efforts should focus on <span className="italic font-medium">differential safety progress</span> – making models safer beyond the default trajectory of capability advances. High correlations enable
             {' '}
             <span className="italic font-medium  bg-[#ED9F9B] px-1.5 whitespace-nowrap inline-block">
               <it>safetywashing</it>
-            </span> where safety metrics can be used for misrepresenting capabilities advancements as safety research. While we don't claim that safety and capabilities are necessarily orthogonal, we do claim that AI safety research efforts should focus on <span className="italic font-medium">differential safety progress</span> – making models safer beyond the default trajectory of capability advances. 
+            </span> where capabilities advancements can be misrepresented as safety research. 
 
 
 {/*                       </p>
